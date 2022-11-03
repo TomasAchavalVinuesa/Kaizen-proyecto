@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+   <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
+
+    <title>web-practica</title>
+  </head>
+  <body>
+    <section><!-- Fondo animado -->
+
+
+    <div class="container my-4"> 
+      <div class="row "style="background-color: white;">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <form>  
+            <div class="col mb-3 mt-2"> 
+              <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" aria-label="Nombre">
+            </div>
+            <div class="col mb-3"> 
+              <input type="text" class="form-control" id="inputApellido" placeholder="Apellido" aria-label="Apellido">
+            </div> 
+            <div class="col mb-3">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email" aria-label="Email">
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                  Fecha de Nacimiento
+                </div>
+              </div>
+              <div class="col-md-9">
+                <input type="date" class="form-control" id="inputFecha">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-2">
+                <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                  Color preferido
+                </div>
+              </div>
+              <div class="col-md-9">
+                <input type="color" class="form-control" id="inputColor">
+              </div>
+              <div class="col">
+                    <!-- Icono Enviar (Carta) -->
+                <lord-icon id="botonEnviar"
+                  src="https://cdn.lordicon.com/rhvddzym.json"
+                  trigger="click"
+                  style="width:50px;height:50px">
+                </lord-icon><!-- Fin Icono Enviar (Carta) -->
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 mt-2">
+          <div class="table">
+            <table class="table table-info">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>color favorito</th>
+                        <th>Operaciones</th>
+                        <th>ID</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="tBody">
+                    <tr>
+
+                    </tr>
+                  </tbody>
+
+
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+      <!-- Icono editar (lapiz) 
+      <lord-icon id="editar" src="https://cdn.lordicon.com/wloilxuq.json" trigger="click" style="width:50px;height:50px"> </lord-icon>
+      Fin Icono editar (lapiz) -->
+      <!-- Icono borrar (basurero) 
+      <lord-icon id="borrar" src="https://cdn.lordicon.com/gsqxdxog.json" trigger="click" style="width:50px;height:50px"> </lord-icon>
+      Fin Icono borrar (basurero) -->
+    </section>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- Js de Iconos-->
+    <script src="JS/icono.js"></script>
+    <!--Mis funciones de JS -->
+    <script src="JS/funciones.js"></script>
+  </body>
+</html>
